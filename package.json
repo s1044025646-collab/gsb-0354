@@ -1,0 +1,17 @@
+{
+  "name": "ptsim",
+  "version": "1.0.0",
+  "private": true,
+  "description": "教学用两级页表地址翻译与访问权限诊断后端",
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run build && node --test dist/test/simulator.test.js",
+    "start": "npm run build && node dist/src/server.js",
+    "demo": "npm run build && node dist/src/demo.js",
+    "cli": "node dist/src/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "typescript": "*"
+  }
+}

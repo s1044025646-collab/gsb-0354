@@ -1,0 +1,19 @@
+{
+  "name": "two-level-pagetable-sim",
+  "version": "1.0.0",
+  "description": "教学用两级页表地址翻译与访问权限诊断后端（TypeScript + Node.js + SQLite）",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/cli.js serve",
+    "demo": "node dist/cli.js demo",
+    "test": "tsc -p tsconfig.json && tsc -p tsconfig.test.json && node --test dist-test"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.6.0"
+  }
+}
